@@ -1,0 +1,34 @@
+.elcustom-tabs >>> .el-tabs--border-card {
+  background: var(--container-bg);
+  border: none;
+  box-shadow: none;
+}
+
+.elcustom-tabs >>> .el-tabs__header {
+  background: var(--container-bg);
+  box-shadow: none;
+}
+
+.elcustom-tabs >>> .el-tabs__item {
+  color: var(--page-text-highlight);
+  padding: 0 10px;
+  font-size: 12px;
+}
+
+.elcustom-tabs >>> .el-tabs__item.is-top:nth-child(2) {
+  padding-left: 10px;
+}
+
+.elcustom-tabs >>> .el-tabs__item:active,
+.elcustom-tabs >>> .el-tabs__item:hover {
+  color: var(--page-text-highlight);
+}
+
+.elcustom-tabs >>> .el-tabs__nav-wrap::after {
+  background-color: var(--page-text);
+  height: 1px;
+}
+
+.elcustom-tabs >>> .el-tabs__active-bar {
+  height: 3px;
+}

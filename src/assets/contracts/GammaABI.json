@@ -1,0 +1,1376 @@
+[
+	{
+		"constant": true,
+		"inputs": [],
+		"name": "currentEventId",
+		"outputs": [
+			{
+				"internalType": "uint64",
+				"name": "",
+				"type": "uint64"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "_tokenGet",
+				"type": "address"
+			},
+			{
+				"internalType": "uint256",
+				"name": "_amountGet",
+				"type": "uint256"
+			},
+			{
+				"internalType": "address",
+				"name": "_tokenGive",
+				"type": "address"
+			},
+			{
+				"internalType": "uint256",
+				"name": "_amountGive",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "_expires",
+				"type": "uint256"
+			},
+			{
+				"internalType": "string",
+				"name": "_clientNonce",
+				"type": "string"
+			},
+			{
+				"internalType": "address",
+				"name": "_seller",
+				"type": "address"
+			}
+		],
+		"name": "availableVolume1",
+		"outputs": [
+			{
+				"internalType": "uint256",
+				"name": "_result",
+				"type": "uint256"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "",
+				"type": "address"
+			},
+			{
+				"internalType": "bytes32",
+				"name": "",
+				"type": "bytes32"
+			}
+		],
+		"name": "orderFills",
+		"outputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "_tokenGet",
+				"type": "address"
+			},
+			{
+				"internalType": "uint256",
+				"name": "_amountGet",
+				"type": "uint256"
+			},
+			{
+				"internalType": "address",
+				"name": "_tokenGive",
+				"type": "address"
+			},
+			{
+				"internalType": "uint256",
+				"name": "_amountGive",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "_expires",
+				"type": "uint256"
+			},
+			{
+				"internalType": "string",
+				"name": "_clientNonce",
+				"type": "string"
+			},
+			{
+				"internalType": "address",
+				"name": "_seller",
+				"type": "address"
+			}
+		],
+		"name": "amountFilled",
+		"outputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"constant": false,
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "_amount",
+				"type": "uint256"
+			}
+		],
+		"name": "withdraw",
+		"outputs": [],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "_tokenGet",
+				"type": "address"
+			},
+			{
+				"internalType": "uint256",
+				"name": "_amountGet",
+				"type": "uint256"
+			},
+			{
+				"internalType": "address",
+				"name": "_tokenGive",
+				"type": "address"
+			},
+			{
+				"internalType": "uint256",
+				"name": "_amountGive",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "_expires",
+				"type": "uint256"
+			},
+			{
+				"internalType": "string",
+				"name": "_clientNonce",
+				"type": "string"
+			},
+			{
+				"internalType": "address",
+				"name": "_seller",
+				"type": "address"
+			},
+			{
+				"internalType": "bytes",
+				"name": "_sig",
+				"type": "bytes"
+			}
+		],
+		"name": "availableVolume3",
+		"outputs": [
+			{
+				"internalType": "uint256",
+				"name": "_result",
+				"type": "uint256"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"constant": false,
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "_token",
+				"type": "address"
+			},
+			{
+				"internalType": "uint256",
+				"name": "_amount",
+				"type": "uint256"
+			}
+		],
+		"name": "depositToken",
+		"outputs": [],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [
+			{
+				"internalType": "bytes32",
+				"name": "h",
+				"type": "bytes32"
+			},
+			{
+				"internalType": "bytes",
+				"name": "sig",
+				"type": "bytes"
+			}
+		],
+		"name": "testGetRSV",
+		"outputs": [
+			{
+				"internalType": "address",
+				"name": "_address",
+				"type": "address"
+			},
+			{
+				"internalType": "bytes32",
+				"name": "_r",
+				"type": "bytes32"
+			},
+			{
+				"internalType": "bytes32",
+				"name": "_s",
+				"type": "bytes32"
+			},
+			{
+				"internalType": "uint8",
+				"name": "_v",
+				"type": "uint8"
+			}
+		],
+		"payable": false,
+		"stateMutability": "pure",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "_tokenGet",
+				"type": "address"
+			},
+			{
+				"internalType": "uint256",
+				"name": "_amountGet",
+				"type": "uint256"
+			},
+			{
+				"internalType": "address",
+				"name": "_tokenGive",
+				"type": "address"
+			},
+			{
+				"internalType": "uint256",
+				"name": "_amountGive",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "_expires",
+				"type": "uint256"
+			},
+			{
+				"internalType": "string",
+				"name": "_clientNonce",
+				"type": "string"
+			}
+		],
+		"name": "getSellHash",
+		"outputs": [
+			{
+				"internalType": "bytes32",
+				"name": "_result",
+				"type": "bytes32"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"constant": false,
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "_tokenGet",
+				"type": "address"
+			},
+			{
+				"internalType": "uint256",
+				"name": "_amountGet",
+				"type": "uint256"
+			},
+			{
+				"internalType": "address",
+				"name": "_tokenGive",
+				"type": "address"
+			},
+			{
+				"internalType": "uint256",
+				"name": "_amountGive",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "_expires",
+				"type": "uint256"
+			},
+			{
+				"internalType": "string",
+				"name": "_clientNonce",
+				"type": "string"
+			},
+			{
+				"internalType": "address",
+				"name": "_seller",
+				"type": "address"
+			},
+			{
+				"internalType": "uint256",
+				"name": "_amount",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint8",
+				"name": "v",
+				"type": "uint8"
+			},
+			{
+				"internalType": "bytes32",
+				"name": "r",
+				"type": "bytes32"
+			},
+			{
+				"internalType": "bytes32",
+				"name": "s",
+				"type": "bytes32"
+			}
+		],
+		"name": "buy2",
+		"outputs": [],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"constant": false,
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "_tokenGet",
+				"type": "address"
+			},
+			{
+				"internalType": "uint256",
+				"name": "_amountGet",
+				"type": "uint256"
+			},
+			{
+				"internalType": "address",
+				"name": "_tokenGive",
+				"type": "address"
+			},
+			{
+				"internalType": "uint256",
+				"name": "_amountGive",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "_expires",
+				"type": "uint256"
+			},
+			{
+				"internalType": "string",
+				"name": "_clientNonce",
+				"type": "string"
+			}
+		],
+		"name": "sell",
+		"outputs": [],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"constant": false,
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "_token",
+				"type": "address"
+			},
+			{
+				"internalType": "uint256",
+				"name": "_amount",
+				"type": "uint256"
+			}
+		],
+		"name": "withdrawToken",
+		"outputs": [],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "_token",
+				"type": "address"
+			},
+			{
+				"internalType": "address",
+				"name": "_user",
+				"type": "address"
+			}
+		],
+		"name": "testAllowance",
+		"outputs": [
+			{
+				"internalType": "uint256",
+				"name": "_result",
+				"type": "uint256"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"constant": false,
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "_tokenGet",
+				"type": "address"
+			},
+			{
+				"internalType": "uint256",
+				"name": "_amountGet",
+				"type": "uint256"
+			},
+			{
+				"internalType": "address",
+				"name": "_tokenGive",
+				"type": "address"
+			},
+			{
+				"internalType": "uint256",
+				"name": "_amountGive",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "_expires",
+				"type": "uint256"
+			},
+			{
+				"internalType": "string",
+				"name": "_clientNonce",
+				"type": "string"
+			},
+			{
+				"internalType": "address",
+				"name": "_seller",
+				"type": "address"
+			},
+			{
+				"internalType": "uint256",
+				"name": "_amount",
+				"type": "uint256"
+			},
+			{
+				"internalType": "bytes",
+				"name": "_sig",
+				"type": "bytes"
+			}
+		],
+		"name": "buy3",
+		"outputs": [],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "",
+				"type": "address"
+			},
+			{
+				"internalType": "address",
+				"name": "",
+				"type": "address"
+			}
+		],
+		"name": "tokenUserAmountOf",
+		"outputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "_tokenGet",
+				"type": "address"
+			},
+			{
+				"internalType": "uint256",
+				"name": "_amountGet",
+				"type": "uint256"
+			},
+			{
+				"internalType": "address",
+				"name": "_tokenGive",
+				"type": "address"
+			},
+			{
+				"internalType": "uint256",
+				"name": "_amountGive",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "_expires",
+				"type": "uint256"
+			},
+			{
+				"internalType": "string",
+				"name": "_clientNonce",
+				"type": "string"
+			},
+			{
+				"internalType": "address",
+				"name": "_seller",
+				"type": "address"
+			},
+			{
+				"internalType": "uint256",
+				"name": "_amount",
+				"type": "uint256"
+			},
+			{
+				"internalType": "address",
+				"name": "_buyer",
+				"type": "address"
+			}
+		],
+		"name": "testBuy1",
+		"outputs": [
+			{
+				"internalType": "bool",
+				"name": "_result",
+				"type": "bool"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "_tokenGet",
+				"type": "address"
+			},
+			{
+				"internalType": "uint256",
+				"name": "_amountGet",
+				"type": "uint256"
+			},
+			{
+				"internalType": "address",
+				"name": "_tokenGive",
+				"type": "address"
+			},
+			{
+				"internalType": "uint256",
+				"name": "_amountGive",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "_expires",
+				"type": "uint256"
+			},
+			{
+				"internalType": "string",
+				"name": "_clientNonce",
+				"type": "string"
+			},
+			{
+				"internalType": "address",
+				"name": "_seller",
+				"type": "address"
+			},
+			{
+				"internalType": "uint256",
+				"name": "_amount",
+				"type": "uint256"
+			},
+			{
+				"internalType": "address",
+				"name": "_buyer",
+				"type": "address"
+			},
+			{
+				"internalType": "uint8",
+				"name": "v",
+				"type": "uint8"
+			},
+			{
+				"internalType": "bytes32",
+				"name": "r",
+				"type": "bytes32"
+			},
+			{
+				"internalType": "bytes32",
+				"name": "s",
+				"type": "bytes32"
+			}
+		],
+		"name": "testBuy2",
+		"outputs": [
+			{
+				"internalType": "bool",
+				"name": "_result",
+				"type": "bool"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"constant": false,
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "_tokenGet",
+				"type": "address"
+			},
+			{
+				"internalType": "uint256",
+				"name": "_amountGet",
+				"type": "uint256"
+			},
+			{
+				"internalType": "address",
+				"name": "_tokenGive",
+				"type": "address"
+			},
+			{
+				"internalType": "uint256",
+				"name": "_amountGive",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "_expires",
+				"type": "uint256"
+			},
+			{
+				"internalType": "string",
+				"name": "_clientNonce",
+				"type": "string"
+			},
+			{
+				"internalType": "uint8",
+				"name": "v",
+				"type": "uint8"
+			},
+			{
+				"internalType": "bytes32",
+				"name": "r",
+				"type": "bytes32"
+			},
+			{
+				"internalType": "bytes32",
+				"name": "s",
+				"type": "bytes32"
+			}
+		],
+		"name": "cancelOrder2",
+		"outputs": [],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "",
+				"type": "address"
+			},
+			{
+				"internalType": "bytes32",
+				"name": "",
+				"type": "bytes32"
+			}
+		],
+		"name": "orders",
+		"outputs": [
+			{
+				"internalType": "bool",
+				"name": "",
+				"type": "bool"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "_tokenGet",
+				"type": "address"
+			},
+			{
+				"internalType": "uint256",
+				"name": "_amountGet",
+				"type": "uint256"
+			},
+			{
+				"internalType": "address",
+				"name": "_tokenGive",
+				"type": "address"
+			},
+			{
+				"internalType": "uint256",
+				"name": "_amountGive",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "_expires",
+				"type": "uint256"
+			},
+			{
+				"internalType": "string",
+				"name": "_clientNonce",
+				"type": "string"
+			},
+			{
+				"internalType": "address",
+				"name": "_seller",
+				"type": "address"
+			},
+			{
+				"internalType": "uint256",
+				"name": "_amount",
+				"type": "uint256"
+			},
+			{
+				"internalType": "address",
+				"name": "_buyer",
+				"type": "address"
+			},
+			{
+				"internalType": "bytes",
+				"name": "_sig",
+				"type": "bytes"
+			}
+		],
+		"name": "testBuy3",
+		"outputs": [
+			{
+				"internalType": "bool",
+				"name": "_result",
+				"type": "bool"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"constant": false,
+		"inputs": [],
+		"name": "deposit",
+		"outputs": [],
+		"payable": true,
+		"stateMutability": "payable",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [
+			{
+				"internalType": "bytes32",
+				"name": "h",
+				"type": "bytes32"
+			},
+			{
+				"internalType": "bytes",
+				"name": "sig",
+				"type": "bytes"
+			}
+		],
+		"name": "getAddress",
+		"outputs": [
+			{
+				"internalType": "address",
+				"name": "_address",
+				"type": "address"
+			}
+		],
+		"payable": false,
+		"stateMutability": "pure",
+		"type": "function"
+	},
+	{
+		"constant": false,
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "_tokenGet",
+				"type": "address"
+			},
+			{
+				"internalType": "uint256",
+				"name": "_amountGet",
+				"type": "uint256"
+			},
+			{
+				"internalType": "address",
+				"name": "_tokenGive",
+				"type": "address"
+			},
+			{
+				"internalType": "uint256",
+				"name": "_amountGive",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "_expires",
+				"type": "uint256"
+			},
+			{
+				"internalType": "string",
+				"name": "_clientNonce",
+				"type": "string"
+			}
+		],
+		"name": "cancelOrder1",
+		"outputs": [],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "_tokenGet",
+				"type": "address"
+			},
+			{
+				"internalType": "uint256",
+				"name": "_amountGet",
+				"type": "uint256"
+			},
+			{
+				"internalType": "address",
+				"name": "_tokenGive",
+				"type": "address"
+			},
+			{
+				"internalType": "uint256",
+				"name": "_amountGive",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "_expires",
+				"type": "uint256"
+			},
+			{
+				"internalType": "string",
+				"name": "_clientNonce",
+				"type": "string"
+			},
+			{
+				"internalType": "address",
+				"name": "_seller",
+				"type": "address"
+			},
+			{
+				"internalType": "uint8",
+				"name": "v",
+				"type": "uint8"
+			},
+			{
+				"internalType": "bytes32",
+				"name": "r",
+				"type": "bytes32"
+			},
+			{
+				"internalType": "bytes32",
+				"name": "s",
+				"type": "bytes32"
+			}
+		],
+		"name": "availableVolume2",
+		"outputs": [
+			{
+				"internalType": "uint256",
+				"name": "_result",
+				"type": "uint256"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"constant": false,
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "_tokenGet",
+				"type": "address"
+			},
+			{
+				"internalType": "uint256",
+				"name": "_amountGet",
+				"type": "uint256"
+			},
+			{
+				"internalType": "address",
+				"name": "_tokenGive",
+				"type": "address"
+			},
+			{
+				"internalType": "uint256",
+				"name": "_amountGive",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "_expires",
+				"type": "uint256"
+			},
+			{
+				"internalType": "string",
+				"name": "_clientNonce",
+				"type": "string"
+			},
+			{
+				"internalType": "address",
+				"name": "_seller",
+				"type": "address"
+			},
+			{
+				"internalType": "uint256",
+				"name": "_amount",
+				"type": "uint256"
+			}
+		],
+		"name": "buy1",
+		"outputs": [],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "_token",
+				"type": "address"
+			},
+			{
+				"internalType": "address",
+				"name": "_user",
+				"type": "address"
+			},
+			{
+				"internalType": "uint256",
+				"name": "_amount",
+				"type": "uint256"
+			}
+		],
+		"name": "testDepositToken",
+		"outputs": [
+			{
+				"internalType": "bool",
+				"name": "_result",
+				"type": "bool"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "token",
+				"type": "address"
+			},
+			{
+				"internalType": "address",
+				"name": "user",
+				"type": "address"
+			}
+		],
+		"name": "balanceOf",
+		"outputs": [
+			{
+				"internalType": "uint256",
+				"name": "_result",
+				"type": "uint256"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"constant": false,
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "_tokenGet",
+				"type": "address"
+			},
+			{
+				"internalType": "uint256",
+				"name": "_amountGet",
+				"type": "uint256"
+			},
+			{
+				"internalType": "address",
+				"name": "_tokenGive",
+				"type": "address"
+			},
+			{
+				"internalType": "uint256",
+				"name": "_amountGive",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "_expires",
+				"type": "uint256"
+			},
+			{
+				"internalType": "string",
+				"name": "_clientNonce",
+				"type": "string"
+			},
+			{
+				"internalType": "bytes",
+				"name": "_sig",
+				"type": "bytes"
+			}
+		],
+		"name": "cancelOrder3",
+		"outputs": [],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"payable": true,
+		"stateMutability": "payable",
+		"type": "fallback"
+	},
+	{
+		"anonymous": false,
+		"inputs": [
+			{
+				"indexed": false,
+				"internalType": "address",
+				"name": "_tokenGet",
+				"type": "address"
+			},
+			{
+				"indexed": false,
+				"internalType": "uint256",
+				"name": "_amountGet",
+				"type": "uint256"
+			},
+			{
+				"indexed": false,
+				"internalType": "address",
+				"name": "_tokenGive",
+				"type": "address"
+			},
+			{
+				"indexed": false,
+				"internalType": "uint256",
+				"name": "_amountGive",
+				"type": "uint256"
+			},
+			{
+				"indexed": false,
+				"internalType": "uint256",
+				"name": "_expires",
+				"type": "uint256"
+			},
+			{
+				"indexed": false,
+				"internalType": "string",
+				"name": "_clientNonce",
+				"type": "string"
+			},
+			{
+				"indexed": false,
+				"internalType": "address",
+				"name": "_seller",
+				"type": "address"
+			},
+			{
+				"indexed": false,
+				"internalType": "uint64",
+				"name": "_eventId",
+				"type": "uint64"
+			}
+		],
+		"name": "OnSell",
+		"type": "event"
+	},
+	{
+		"anonymous": false,
+		"inputs": [
+			{
+				"indexed": false,
+				"internalType": "address",
+				"name": "_tokenGet",
+				"type": "address"
+			},
+			{
+				"indexed": false,
+				"internalType": "uint256",
+				"name": "_okAmountGet",
+				"type": "uint256"
+			},
+			{
+				"indexed": false,
+				"internalType": "address",
+				"name": "_tokenGive",
+				"type": "address"
+			},
+			{
+				"indexed": false,
+				"internalType": "uint256",
+				"name": "_okAmountGive",
+				"type": "uint256"
+			},
+			{
+				"indexed": false,
+				"internalType": "address",
+				"name": "_seller",
+				"type": "address"
+			},
+			{
+				"indexed": false,
+				"internalType": "address",
+				"name": "_buyer",
+				"type": "address"
+			},
+			{
+				"indexed": false,
+				"internalType": "bytes32",
+				"name": "_sellHash",
+				"type": "bytes32"
+			},
+			{
+				"indexed": false,
+				"internalType": "uint64",
+				"name": "_eventId",
+				"type": "uint64"
+			}
+		],
+		"name": "OnBuy",
+		"type": "event"
+	},
+	{
+		"anonymous": false,
+		"inputs": [
+			{
+				"indexed": false,
+				"internalType": "address",
+				"name": "_tokenGet",
+				"type": "address"
+			},
+			{
+				"indexed": false,
+				"internalType": "uint256",
+				"name": "_amountGet",
+				"type": "uint256"
+			},
+			{
+				"indexed": false,
+				"internalType": "address",
+				"name": "_tokenGive",
+				"type": "address"
+			},
+			{
+				"indexed": false,
+				"internalType": "uint256",
+				"name": "_amountGive",
+				"type": "uint256"
+			},
+			{
+				"indexed": false,
+				"internalType": "uint256",
+				"name": "_expires",
+				"type": "uint256"
+			},
+			{
+				"indexed": false,
+				"internalType": "string",
+				"name": "_clientNonce",
+				"type": "string"
+			},
+			{
+				"indexed": false,
+				"internalType": "address",
+				"name": "_seller",
+				"type": "address"
+			},
+			{
+				"indexed": false,
+				"internalType": "uint64",
+				"name": "_eventId",
+				"type": "uint64"
+			}
+		],
+		"name": "OnCancel",
+		"type": "event"
+	},
+	{
+		"anonymous": false,
+		"inputs": [
+			{
+				"indexed": true,
+				"internalType": "address",
+				"name": "_token",
+				"type": "address"
+			},
+			{
+				"indexed": true,
+				"internalType": "address",
+				"name": "_user",
+				"type": "address"
+			},
+			{
+				"indexed": false,
+				"internalType": "uint256",
+				"name": "_amount",
+				"type": "uint256"
+			},
+			{
+				"indexed": false,
+				"internalType": "uint256",
+				"name": "_balance",
+				"type": "uint256"
+			},
+			{
+				"indexed": false,
+				"internalType": "uint64",
+				"name": "_eventId",
+				"type": "uint64"
+			}
+		],
+		"name": "OnDeposit",
+		"type": "event"
+	},
+	{
+		"anonymous": false,
+		"inputs": [
+			{
+				"indexed": true,
+				"internalType": "address",
+				"name": "_token",
+				"type": "address"
+			},
+			{
+				"indexed": true,
+				"internalType": "address",
+				"name": "_user",
+				"type": "address"
+			},
+			{
+				"indexed": false,
+				"internalType": "uint256",
+				"name": "_amount",
+				"type": "uint256"
+			},
+			{
+				"indexed": false,
+				"internalType": "uint256",
+				"name": "_balance",
+				"type": "uint256"
+			},
+			{
+				"indexed": false,
+				"internalType": "uint64",
+				"name": "_eventId",
+				"type": "uint64"
+			}
+		],
+		"name": "OnWithdraw",
+		"type": "event"
+	}
+]
