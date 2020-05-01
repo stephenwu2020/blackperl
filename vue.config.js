@@ -1,4 +1,7 @@
 module.exports = {
+  devServer: {
+    disableHostCheck: true
+  },
   pluginOptions: {
     autoRouting: {
       chunkNamePrefix: "page-"
