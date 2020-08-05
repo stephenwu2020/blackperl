@@ -12,10 +12,7 @@ import "@/plugins/shh";
 import "@/plugins/clipboard";
 import "@/plugins/axios";
 import i18n from "@/plugins/i18n";
-//import "@/plugins/gamma";
 import "@/plugins/eventBus";
-
-import "@/scripts/dex/filters";
 
 Vue.config.productionTip = false;
 

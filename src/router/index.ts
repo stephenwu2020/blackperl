@@ -10,7 +10,7 @@ const RouterLayout = createRouterLayout(layout =>
 );
 
 const router = new Router({
-  mode: "history",
+//  mode: "history",
   routes: [
     {
       path: "/",
