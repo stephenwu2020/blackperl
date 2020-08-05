@@ -62,6 +62,9 @@ export default Vue.extend({
     },
     writings() {
       return writings;
+    },
+    isGHPageMode() {
+      return process.env.NODE_ENV === "gh-pages";
     }
   },
   created() {
@@ -91,12 +94,13 @@ export default Vue.extend({
         return;
       }
       this.selectId = id;
-      const location = process.env.NODE_ENV === 'gh-pages' 
-        ? "/blackperl" + article.path
-        : article.path
+      const location = this.isGHPageMode ? "/blackperl" + article.path : article.path
       this.$axios
         .get(location)
         .then((res: any) => {
+          if (this.isGHPageMode) {
+            res = res.replace(/book/g, "blackperl/book");
+          }
           this.source = res;
           return this.$nextTick();
         })
