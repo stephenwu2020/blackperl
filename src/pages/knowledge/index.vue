@@ -64,7 +64,7 @@ export default Vue.extend({
       return writings;
     },
     isGHPageMode() {
-      return process.env.NODE_ENV === "gh-pages";
+      return process.env.VUE_APP_GHPAGES === "yes";
     }
   },
   created() {
