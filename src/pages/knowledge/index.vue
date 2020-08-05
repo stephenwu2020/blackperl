@@ -91,8 +91,11 @@ export default Vue.extend({
         return;
       }
       this.selectId = id;
+      const location = process.env.NODE_ENV === 'gh-pages' 
+        ? "/blackperl" + article.path
+        : article.path
       this.$axios
-        .get(article.path)
+        .get(location)
         .then((res: any) => {
           this.source = res;
           return this.$nextTick();
