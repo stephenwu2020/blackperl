@@ -113,7 +113,7 @@ export default Vue.extend({
           rightComp.scrollTop = 0;
         })
         .catch((err: Error) => {
-          console.error(err);
+          //console.error(err);
         });
     },
     isOpen(id: number) {
