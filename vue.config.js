@@ -1,5 +1,5 @@
 module.exports = {
-  publicPath: process.env.VUE_APP_GHPAGES === "yes" ? "/blackperl/" : "/",
+  publicPath: process.env.VUE_APP_PUBLIC_PATH || "/",
   devServer: {
     disableHostCheck: true
   },

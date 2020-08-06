@@ -62,9 +62,6 @@ export default Vue.extend({
     },
     writings() {
       return writings;
-    },
-    isGHPageMode() {
-      return process.env.VUE_APP_GHPAGES === "yes";
     }
   },
   created() {
@@ -102,8 +99,11 @@ export default Vue.extend({
           return w.default;
         })
         .then((res: any) => {
-          if (this.isGHPageMode) {
-            res = res.replace(/book/g, "blackperl/book");
+          if (process.env.VUE_APP_PUBLIC_PATH) {
+            res = res.replace(
+              /\/book\//g,
+              `${process.env.VUE_APP_PUBLIC_PATH}book/`
+            );
           }
           this.source = res;
           return this.$nextTick();
