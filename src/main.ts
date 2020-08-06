@@ -8,7 +8,6 @@ import "@/assets/css/default.css";
 import "@/plugins/app";
 import "@/plugins/element";
 import "@/plugins/db";
-import "@/plugins/shh";
 import "@/plugins/clipboard";
 import "@/plugins/axios";
 import i18n from "@/plugins/i18n";
