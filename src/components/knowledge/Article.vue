@@ -16,7 +16,7 @@ export default Vue.extend({
 });
 </script>
 
-<style lang="postcss" scoped>
+<style lang="postcss">
 .article {
   padding: 10px;
   margin-bottom: 20px;
