@@ -94,9 +94,13 @@ export default Vue.extend({
         return;
       }
       this.selectId = id;
-      const location = this.isGHPageMode ? "/blackperl" + article.path : article.path
-      this.$axios
-        .get(location)
+
+      Promise.resolve()
+        .then(() => {
+          // read writing from assets
+          const w = require(`@/assets${article.path}`);
+          return w.default;
+        })
         .then((res: any) => {
           if (this.isGHPageMode) {
             res = res.replace(/book/g, "blackperl/book");

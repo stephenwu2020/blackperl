@@ -1,7 +1,5 @@
 module.exports = {
-  publicPath: process.env.VUE_APP_GHPAGES === "yes"
-    ? '/blackperl/'
-    : '/',
+  publicPath: process.env.VUE_APP_GHPAGES === "yes" ? "/blackperl/" : "/",
   devServer: {
     disableHostCheck: true
   },
@@ -15,5 +13,13 @@ module.exports = {
       localeDir: "locales",
       enableInSFC: false
     }
+  },
+  chainWebpack: config => {
+    config.module
+      .rule("raw-loader")
+      .test(/\.(md)(\?.*)?$/)
+      .use("raw-loader")
+      .loader("raw-loader")
+      .end();
   }
 };
