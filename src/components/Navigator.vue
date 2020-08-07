@@ -32,14 +32,9 @@ export default Vue.extend({
       return [
         { id: 0, name: "首页", link: "/" },
         { id: 1, name: "钱包", link: "/wallet" },
-        { id: 3, name: "知识", link: "/knowledge" },
-        { id: 4, name: "Fabric", link: "/fabric" },
-        {
-          id: 2,
-          name: "聊天",
-          link: "/chat",
-          out: "https://github.com/stephenwu2020/whisper-chat"
-        }
+        { id: 2, name: "知识", link: "/knowledge" },
+        { id: 3, name: "Fabric", link: "/fabric" },
+        { id: 4, name: "更多", link: "/recommend" }
       ];
     }
   },
@@ -53,10 +48,6 @@ export default Vue.extend({
   },
   methods: {
     handleClick(item: any) {
-      if (item.out) {
-        window.open(item.out, "_blank");
-        return;
-      }
       this.$router.push({ path: item.link });
     },
 
