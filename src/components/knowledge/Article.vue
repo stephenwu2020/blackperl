@@ -51,7 +51,8 @@ export default Vue.extend({
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
   }
 
-  ul {
+  ul,
+  ol {
     line-height: 25px;
     background-color: rgb(250, 250, 250);
     color: gray;
@@ -62,6 +63,15 @@ export default Vue.extend({
 
   blockquote {
     margin-left: 20px;
+  }
+
+  pre {
+    padding: 16px;
+    overflow: auto;
+    font-size: 85%;
+    line-height: 1.45;
+    background-color: #f6f8fa;
+    border-radius: 6px;
   }
 }
 </style>
