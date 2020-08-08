@@ -41,5 +41,11 @@ export const writings = [
     groupId: 1,
     name: "从0开始搭建Fabric网络:Peer",
     path: "/fabric/group01/coffee06.md"
+  },
+  {
+    id: 107,
+    groupId: 1,
+    name: "从0开始搭建Fabric网络:链码",
+    path: "/fabric/group01/coffee07.md"
   }
 ];
