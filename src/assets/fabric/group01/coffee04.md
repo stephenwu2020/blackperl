@@ -18,6 +18,7 @@ cd 03-defining-a-consortium
                 Organizations:
                     - *Ming
 ```
-
+## 网络示意图
+![consortium](/book/fabric/coffee03.png)
 注：
 - 本节源码位于: [03-defining-a-consortium](https://github.com/stephenwu2020/hfcoffeeshop/tree/master/03-defining-a-consortium)

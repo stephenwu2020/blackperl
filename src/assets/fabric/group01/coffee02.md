@@ -7,7 +7,7 @@ Fabric网络的重中之重是orderer节点。交易是如何在Fabric网络处�
 - orderer类型： EtcdRaft
 - orderer数量：1
 
-现在进入正式编码环节。
+## 现在进入正式编码环节
 第一、Fabric中，所有的资源都必须认证，我们首先创建orderer的证书文件：
 1. 创建文件夹： 01-creating-the-network
 2. 进入文件夹，创建文件：crypto-config.yaml，添加以下内容：
@@ -116,7 +116,11 @@ df23933ad957        hyperledger/fabric-orderer:2.2.0   "orderer"           4 sec
 ```
 咖啡馆网络的启动工作就大功告成了
 
-命令讲解：./networks.sh每一个命令相对应一个操作：
+## 网络示意图
+![orderer](/book/fabric/coffee01.png)
+
+## 命令讲解
+./networks.sh每一个命令相对应一个操作：
 - 创建证书: ./network.sh crypto
 - 创建创世块: ./network.sh genesis
 - 启动网络: ./network.sh up

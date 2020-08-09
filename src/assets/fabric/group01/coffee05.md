@@ -1,7 +1,8 @@
 # 从0开始搭建Fabric网络:Channel
 ## 定义channel
 上一节，小明定义了一个联盟X1，并且把企业Ming加入至联盟中。Channel与联盟，其实是同一个东西的不同表现。联盟在Fabric技术上的实现就是channel。企业之间结成联盟，在技术上就是指企业对应的peer节点加入同一个channel。
-现在开始添加channel:
+
+## 现在开始添加channel
 第一，创建目录04-creating-a-channel, 进入该目录：
 ```
 mkdir 04-creating-a-channel
@@ -55,15 +56,17 @@ cd 04-creating-a-channel
 ```
 ./network.sh custom
 ```
-检查docker容器状态：
+## 检查docker容器状态
 ```
 docker ps
 CONTAINER ID        IMAGE                              COMMAND             CREATED             STATUS              PORTS                    NAMES
 e04af9c615ad        hyperledger/fabric-tools:2.2.0     "/bin/bash"         5 minutes ago       Up 5 minutes                                 cli
 9fccfa81938a        hyperledger/fabric-orderer:2.2.0   "orderer"           5 minutes ago       Up 5 minutes        0.0.0.0:7050->7050/tcp   orderer.coffeeshop.com
 ```
+## 网络示意图
+![consortium](/book/fabric/coffee04.png)
 
-解释命令：
+## 解释命令
 执行./network.sh custom过程中，分别执行了下列的命令：
 - clear： 清空上一次创建的网络
 - crypto： 创建证书文件

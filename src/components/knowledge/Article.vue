@@ -48,7 +48,7 @@ export default Vue.extend({
   img {
     max-width: 80%;
     margin: 30px;
-    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0 3px 1px rgba(0, 0, 0, 0.2);
   }
 
   ul,

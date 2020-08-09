@@ -6,7 +6,7 @@ Peer的主要任务有：
 - 接收orderer的区块
 - 将区块写入本地数据库
 
-现在开始部署Peer节点
+## 现在开始部署Peer节点
 第一，创建目录05-peers-and-ledgers，进入该目录
 ```
 mkdir 05-peers-and-ledgers
@@ -64,7 +64,7 @@ cd 05-peers-and-ledgers
 ```
 ./network.sh custom
 ```
-检查docker容器状态：
+## 检查docker容器状态
 ```
 docker ps
 CONTAINER ID        IMAGE                              COMMAND             CREATED             STATUS              PORTS                    NAMES
@@ -73,7 +73,11 @@ b87e39044118        hyperledger/fabric-tools:2.2.0     "/bin/bash"         45 se
 8ad4281a376c        hyperledger/fabric-orderer:2.2.0   "orderer"           47 seconds ago      Up 45 seconds       0.0.0.0:7050->7050/tcp   orderer.coffeeshop.com
 ```
 
-命令解释：执行./network.sh custom启动网络，其中新增的命令是:
+## 网络示意图
+![consortium](/book/fabric/coffee05.png)
+
+## 命令解释
+执行./network.sh custom启动网络，其中新增的命令是:
 - joinChan: 将peer加入channel
 - setAnchor：设置企业Ming的anchor peer为`peer0.ming.coffeeshop.com`
 - listChan: 查看当前channel的信息

@@ -1,5 +1,7 @@
 # 从0开始搭建Fabric网络:链码
-Fabric的商业逻辑通过chaincode，即链码来实现。链码的作用，简单来说，就是操作Fabric的数据库，修改变量的值，同时给Fabric之外的应用程序提供操作接口。现在开始为我们的咖啡馆网络部署链码。
+Fabric的商业逻辑通过chaincode，即链码来实现。链码的作用，简单来说，就是操作Fabric的数据库，修改变量的值，同时给Fabric之外的应用程序提供操作接口。
+
+## 现在开始为我们的咖啡馆网络部署链码
 
 第一，创建目录06-smart-contract-chaincode，并且进入该目录
 ```
@@ -49,7 +51,7 @@ cd 06-smart-contract-chaincode
     ```
 熟悉上述操作之后，将他们合并成custom指令，免得一句一句从新打
 
-执行 docker ps 查看容器的状态：
+## 查看容器的状态
 ```
 CONTAINER ID        IMAGE                                                                                                                                                                       COMMAND                  CREATED             STATUS              PORTS                    NAMES
 ef2e285c572a        dev-peer0.ming.coffeeshop.com-abstore_1-bf43a0391f5bac984beb7e55751e7f33432c517800406c12b6a2fd789480fe95-79103ebc9b8d25cd59dfd065e96be85d38c4f6332047cc67349cabdcd3fc0c23   "chaincode -peer.add…"   7 minutes ago       Up 7 minutes                                 dev-peer0.ming.coffeeshop.com-abstore_1-bf43a0391f5bac984beb7e55751e7f33432c517800406c12b6a2fd789480fe95
@@ -59,6 +61,9 @@ ef2e285c572a        dev-peer0.ming.coffeeshop.com-abstore_1-bf43a0391f5bac984beb
 ```
 发现多了一个容器，以dev-peer0.ming.coffeeshop.com开头，这个是链码执行的容器
 好了，链码部署成功！
+
+## 网络示意图
+![consortium](/book/fabric/coffee06.png)
 
 注
 - 本节源码位于:[06-smart-contract-chaincode](https://github.com/stephenwu2020/hfcoffeeshop/tree/master/06-smart-contract-chaincode)

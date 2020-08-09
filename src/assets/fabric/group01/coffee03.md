@@ -6,7 +6,7 @@
 - peer权限：管理权限
 - peer数量：1
 
-现在开始编写peer节点配置:
+## 现在开始编写peer节点配置
 第一，创建目录 02-adding-network-administrators，并且进入该目录：
 ```
 mkdir 02-adding-network-administrators
@@ -65,6 +65,9 @@ Profiles:
 ```
 ./network.sh custom
 ```
+
+## 网络示意图
+![admin](/book/fabric/coffee02.png)
 
 注:
 - 在这一节中，重点是配置peer节点，相应组织Ming添加为网络管理组织，而peer节点的容器尚未启动
