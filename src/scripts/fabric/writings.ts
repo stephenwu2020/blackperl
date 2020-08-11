@@ -47,5 +47,11 @@ export const writings = [
     groupId: 1,
     name: "从0开始搭建Fabric网络:链码",
     path: "/fabric/group01/coffee07.md"
+  },
+  {
+    id: 201,
+    groupId: 2,
+    name: "专门开发chaincode的网络",
+    path: "/fabric/group02/devnet.md"
   }
 ];

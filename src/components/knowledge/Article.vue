@@ -54,11 +54,9 @@ export default Vue.extend({
   ul,
   ol {
     line-height: 25px;
-    background-color: rgb(250, 250, 250);
     color: gray;
     box-sizing: border-box;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding: 10px 30px;
   }
 
   blockquote {
