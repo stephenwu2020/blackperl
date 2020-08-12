@@ -1,8 +1,7 @@
 export const group = [
   { id: 1, name: "Fabric网络部署" },
-  { id: 2, name: "Fabric链码开发" },
-  { id: 3, name: "Fabric链码设计" },
-  { id: 4, name: "Fabric商业应用" }
+  { id: 2, name: "Fabric链码设计开发" },
+  { id: 3, name: "Fabric应用" }
 ];
 
 export const writings = [
@@ -48,10 +47,18 @@ export const writings = [
     name: "从0开始搭建Fabric网络:链码",
     path: "/fabric/group01/coffee07.md"
   },
+  // group 2
   {
     id: 201,
     groupId: 2,
     name: "专门开发chaincode的网络",
     path: "/fabric/group02/devnet.md"
+  },
+  // group 3
+  {
+    id: 301,
+    groupId: 3,
+    name: "使用fabric-sdk-go开发简单的app",
+    path: "/fabric/group03/cli.md"
   }
 ];
