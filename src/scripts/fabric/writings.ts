@@ -1,7 +1,7 @@
 export const group = [
   { id: 1, name: "Fabric网络部署" },
-  { id: 2, name: "Fabric链码设计开发" },
-  { id: 3, name: "Fabric应用" }
+  { id: 2, name: "Fabric链码开发" },
+  { id: 3, name: "Fabric应用案例" }
 ];
 
 export const writings = [
