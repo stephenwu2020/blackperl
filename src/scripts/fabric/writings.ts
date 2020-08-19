@@ -60,5 +60,11 @@ export const writings = [
     groupId: 3,
     name: "使用fabric-sdk-go开发简单的app",
     path: "/fabric/group03/cli.md"
+  },
+  {
+    id: 302,
+    groupId: 3,
+    name: "使用fabric-sdk-go开发Web应用",
+    path: "/fabric/group03/webapp.md"
   }
 ];
