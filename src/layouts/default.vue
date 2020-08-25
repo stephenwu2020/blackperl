@@ -31,6 +31,7 @@ export default Vue.extend({
   bottom: 0;
   overflow: auto;
   display: flex;
+  min-width: 768px;
   &-main {
     width: 100%;
     height: 100%;

@@ -37,6 +37,7 @@ export default Vue.extend({
     width: 100%;
     &-desc {
       flex: 1;
+      padding-left: 40px;
       p {
         margin-top: 10px;
         max-width: 70%;
@@ -51,10 +52,14 @@ export default Vue.extend({
     }
     &-show {
       flex: 2;
+      display: flex;
+      justify-content: center;
+      align-items: center;
       img {
         flex: 2;
-        margin: auto;
-        max-width: 100%;
+        width: 80%;
+        max-width: 80%;
+        min-height: 200px;
         box-shadow: 0 0 1px 2px #ddd;
       }
     }
