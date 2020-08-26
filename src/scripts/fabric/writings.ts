@@ -72,5 +72,11 @@ export const writings = [
     groupId: 3,
     name: "花名册应用",
     path: "/fabric/group03/roster.md"
+  },
+  {
+    id: 304,
+    groupId: 3,
+    name: "保险应用",
+    path: "/fabric/group03/insurance.md"
   }
 ];
