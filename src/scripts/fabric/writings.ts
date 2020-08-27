@@ -54,6 +54,12 @@ export const writings = [
     name: "专门开发chaincode的网络",
     path: "/fabric/group02/devnet.md"
   },
+  {
+    id: 202,
+    groupId: 2,
+    name: "Chaincode的生命周期管理",
+    path: "/fabric/group02/lifecycle.md"
+  },
   // group 3
   {
     id: 301,
