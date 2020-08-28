@@ -31,9 +31,9 @@ export default Vue.extend({
     projects() {
       return [
         { id: 0, name: "首页", link: "/" },
-        { id: 1, name: "钱包", link: "/wallet" },
-        { id: 2, name: "知识", link: "/knowledge" },
         { id: 3, name: "Fabric", link: "/fabric" },
+        { id: 2, name: "区块链", link: "/knowledge" },
+        { id: 1, name: "钱包", link: "/wallet" },
         { id: 4, name: "更多", link: "/recommend" }
       ];
     }

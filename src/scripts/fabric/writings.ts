@@ -60,6 +60,18 @@ export const writings = [
     name: "Chaincode的生命周期管理",
     path: "/fabric/group02/lifecycle.md"
   },
+  {
+    id: 203,
+    groupId: 2,
+    name: "SDK Package",
+    path: "/fabric/group02/sdk.md"
+  },
+  {
+    id: 204,
+    groupId: 2,
+    name: "小明的健康记录",
+    path: "/fabric/group02/health.md"
+  },
   // group 3
   {
     id: 301,
