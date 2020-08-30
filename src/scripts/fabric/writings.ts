@@ -2,7 +2,7 @@ export const group = [
   { id: 1, name: "Fabric网络部署" },
   { id: 2, name: "Fabric链码开发" },
   { id: 3, name: "Fabric应用案例" },
-  { id: 4, name: "奇闻轶事" }
+  { id: 4, name: "随笔" }
 ];
 
 export const writings = [
@@ -104,5 +104,11 @@ export const writings = [
     groupId: 4,
     name: "咖啡馆的区块链之旅",
     path: "/fabric/group04/consensus.md"
+  },
+  {
+    id: 402,
+    groupId: 4,
+    name: "咖啡馆与Raft共识",
+    path: "/fabric/group04/raft.md"
   }
 ];
