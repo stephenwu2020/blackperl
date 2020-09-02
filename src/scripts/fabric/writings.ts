@@ -73,6 +73,12 @@ export const writings = [
     name: "小明的健康记录",
     path: "/fabric/group02/health.md"
   },
+  {
+    id: 205,
+    groupId: 2,
+    name: "使用Explorer查看网络状态",
+    path: "/fabric/group02/explorer.md"
+  },
   // group 3
   {
     id: 301,
