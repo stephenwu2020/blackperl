@@ -116,5 +116,11 @@ export const writings = [
     groupId: 4,
     name: "咖啡馆与Raft共识",
     path: "/fabric/group04/raft.md"
+  },
+  {
+    id: 403,
+    groupId: 4,
+    name: "Orderer启动时做了什么",
+    path: "/fabric/group04/orderer.md"
   }
 ];
